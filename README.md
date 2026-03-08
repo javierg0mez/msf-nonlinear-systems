@@ -1,6 +1,6 @@
 # Master Stability Function for Chaotic Dynamical Systems
 
-This repository contains Python implementations used to compute the **Master Stability Function (MSF)** for several well-known nonlinear dynamical systems under different linear coupling schemes.
+This repository contains Python implementations used to compute the Master Stability Function (MSF) for several well-known nonlinear dynamical systems under different linear coupling schemes.
 
 The numerical experiments reproduce and explore typical MSF behaviors for chaotic systems, illustrating how the choice of coupling protocol affects the stability of the synchronization manifold in networks of coupled dynamical systems.
 
