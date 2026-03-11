@@ -27,14 +27,14 @@ where the notation $x^i \rightarrow x^j$ indicates that the i-th component of on
 ## Numerical methodology
 
 The MSF is obtained from the variational equation
-$\dot{\xi}= \left[Df\left( s \right)  - r Dh\left( s \right)\right]\xi,$
+$$\dot{\xi}= \left[Df\left( s \right)  - r Dh\left( s \right)\right]\xi,$$
 integrated along the synchronized trajectory $s(t)$ of the isolated system.
 
 The numerical procedure is the following:
 1. The trajectory $s(t)$ of the isolated dynamical system is obtained by integrating the equation $\dot{s} = f(s)$ using _SciPy's `odeint` solver_ with adaptive time step.
 2. For each value of the normalized coupling parameter $r$, the linear variational equation is integrated.
 3. The perturbation vector is iteratively renormalized and the largest Lyapunov exponent is estimated from
-$\Lambda(r) = \lim_{M \to \infty} \frac{1}{T} \sum_{k=1}^{M} \ln \|\xi_k\|,$
+$$\Lambda(r) = \lim_{M \to \infty} \frac{1}{T} \sum_{k=1}^{M} \ln \|\xi_k\|,$$
 where $T = M\Delta t$ is the total integration time.
 4. Repeating this procedure for many values of $r$ yields the function $\Lambda(r)$.
 
