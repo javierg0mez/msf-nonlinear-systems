@@ -27,7 +27,9 @@ where the notation $x^i \rightarrow x^j$ indicates that the i-th component of on
 ## Numerical methodology
 
 The MSF is obtained from the variational equation
-$$\dot{\xi}= \left[Df\left( s \right)  - r Dh\left( s \right)\right]\xi,$$
+
+$\dot{\xi}= \left[Df\left( s \right)  - r Dh\left( s \right)\right]\xi,$
+
 integrated along the synchronized trajectory $s(t)$ of the isolated system.
 
 The numerical procedure is the following:
