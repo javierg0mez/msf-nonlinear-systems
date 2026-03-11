@@ -40,6 +40,7 @@ The numerical procedure is the following:
 $$\Lambda(r) = \lim_{M \to \infty} \frac{1}{T} \sum_{k=1}^{M} \ln \|\xi_k\|,$$
 
 where $T = M\Delta t$ is the total integration time.
+
 4. Repeating this procedure for many values of $r$ yields the function $\Lambda(r)$.
 
 ## Requirements
