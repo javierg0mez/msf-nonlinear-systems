@@ -7,17 +7,18 @@ The numerical experiments reproduce and explore typical MSF behaviors for chaoti
 ## Systems analyzed
 
 The following dynamical systems are considered:
-- Rössler system  
-- Lorenz system  
-- Chen system  
-- Chua circuit  
-- Hindmarsh–Rose neuron model  
-- Forced Duffing oscillator  
-- Forced Van der Pol oscillator  
+- Rössler system,
+- Lorenz system,
+- Chen system,
+- Chua circuit,
+- Hindmarsh–Rose neuron model,
+- Forced Duffing oscillator,
+- Forced Van der Pol oscillator.
 
 For each system, the MSF is computed for different _single-component coupling schemes_ between the state variables.
 
 For three-dimensional systems with state vector (x, y, z), the possible linear coupling configurations are:
+
 x → x, x → y, x → z  
 y → x, y → y, y → z  
 z → x, z → y, z → z  
@@ -33,6 +34,7 @@ $\dot{\xi}= \left[Df\left( s \right)  - r Dh\left( s \right)\right]\xi,$
 integrated along the synchronized trajectory $s(t)$ of the isolated system.
 
 The numerical procedure is the following:
+
 1. The trajectory $s(t)$ of the isolated dynamical system is obtained by integrating the equation $\dot{s} = f(s)$ using _SciPy's `odeint` solver_ with adaptive time step.
 2. For each value of the normalized coupling parameter $r$, the linear variational equation is integrated.
 3. The perturbation vector is iteratively renormalized and the largest Lyapunov exponent is estimated from
