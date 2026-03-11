@@ -36,9 +36,11 @@ The numerical procedure is the following:
 1. The trajectory $s(t)$ of the isolated dynamical system is obtained by integrating the equation $\dot{s} = f(s)$ using _SciPy's `odeint` solver_ with adaptive time step.
 2. For each value of the normalized coupling parameter $r$, the linear variational equation is integrated.
 3. The perturbation vector is iteratively renormalized and the largest Lyapunov exponent is estimated from
+4. 
 $$\Lambda(r) = \lim_{M \to \infty} \frac{1}{T} \sum_{k=1}^{M} \ln \|\xi_k\|,$$
+
 where $T = M\Delta t$ is the total integration time.
-4. Repeating this procedure for many values of $r$ yields the function $\Lambda(r)$.
+6. Repeating this procedure for many values of $r$ yields the function $\Lambda(r)$.
 
 ## Requirements
 
