@@ -24,7 +24,7 @@ x → x, x → y, x → z
 y → x, y → y, y → z  
 z → x, z → y, z → z  
 
-where the notation \(x^i \rightarrow x^j\) indicates that the i-th component of one system is coupled to the j-th component of another system.
+where the notation $x^i \rightarrow x^j$ indicates that the i-th component of one system is coupled to the j-th component of another system.
 
 ## Numerical methodology
 
