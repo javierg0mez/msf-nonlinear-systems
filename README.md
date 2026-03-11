@@ -7,7 +7,6 @@ The numerical experiments reproduce and explore typical MSF behaviors for chaoti
 ## Systems analyzed
 
 The following dynamical systems are considered:
-
 - Rössler system  
 - Lorenz system  
 - Chen system  
@@ -19,7 +18,6 @@ The following dynamical systems are considered:
 For each system, the MSF is computed for different **single-component coupling schemes** between the state variables.
 
 For three-dimensional systems with state vector (x, y, z), the possible linear coupling configurations are:
-
 x → x, x → y, x → z  
 y → x, y → y, y → z  
 z → x, z → y, z → z  
@@ -37,7 +35,7 @@ integrated along the synchronized trajectory $s(t)$ of the isolated system.
 The numerical procedure is the following:
 
 1. The trajectory $s(t)$ of the isolated dynamical system is obtained by integrating the equation  
-   \( \dot{s} = f(s) \) using **SciPy's `odeint` solver** with adaptive time step.
+   $\dot{s} = f(s)$ using **SciPy's `odeint` solver** with adaptive time step.
 
 2. For each value of the normalized coupling parameter \(r\), the linear variational equation is integrated.
 
