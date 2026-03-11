@@ -30,13 +30,13 @@ where the notation $x^i \rightarrow x^j$ indicates that the i-th component of on
 
 The Master Stability Function is obtained from the variational equation
 
-ξ̇ = [Df(s) − r Dh(s)] ξ
+$\dot{\xi}= \left[\vphantom{\frac{1}{2}}Df\left( s \right)  - r Dh\left( s \right)\right]\xi$
 
-integrated along the synchronized trajectory \(s(t)\) of the isolated system.
+integrated along the synchronized trajectory $s(t)$ of the isolated system.
 
 The numerical procedure is the following:
 
-1. The trajectory \(s(t)\) of the isolated dynamical system is obtained by integrating the equation  
+1. The trajectory $s(t)$ of the isolated dynamical system is obtained by integrating the equation  
    \( \dot{s} = f(s) \) using **SciPy's `odeint` solver** with adaptive time step.
 
 2. For each value of the normalized coupling parameter \(r\), the linear variational equation is integrated.
